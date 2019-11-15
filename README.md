@@ -29,7 +29,7 @@ pip install pyquaternion
 The program generate_fractal.py executes coord_generator.out and generates a file coords.data which contains the coordinates of the fractal monomers. Then, these coordinates are rotated by the Euler angles alpha, beta and gamma. Finally, the function gen_frac generates executes mstm.out using a file which includes all the angles that you want to calculate. By default the file is "scat_angles.csv". A file is created "mueller_log" in the save location (which by default is "test"). The file mueller_log and log contains the scattering phase function. 
 
 To use the python function:
-mueller_matrix,coordinates = gen_frac(size_parameter,alpha,beta,gamma) 
+- mueller_matrix,coordinates = gen_frac(size_parameter,alpha,beta,gamma) 
 
 
 
