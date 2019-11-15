@@ -19,8 +19,8 @@ The code also uses fracagpos.f90 to generate random coordinates of monomers. Thi
 
 These commands worked for me:
 
-gfortran fracagpos.f90
-mv a.out coord_generator.out
+-gfortran fracagpos.f90
+-mv a.out coord_generator.out
 
 Finally, you need to have pyquaternion module installed for python to execute the Euler rotations; To install pyquaternion:
 
