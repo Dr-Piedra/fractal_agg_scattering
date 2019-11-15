@@ -1,0 +1,6 @@
+coords.dat
+input.inp
+mstm.exe
+coord_generator.out
+test/*
+__pycache_/*

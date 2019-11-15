@@ -1,0 +1,529 @@
+begin_comment
+***********************************************************
+  This is the default mstm input file for v.3.0. 
+  The run is for a 7-sphere cluster of identical spheres.   The positions
+  are embedded in the input file.   
+
+  The run makes use of the new_run and multiple_run options.   
+  
+  14 April 2013
+***********************************************************
+end_comment
+number_spheres
+7
+sphere_position_file
+
+output_file
+mstm_default_out.dat
+append_output_file
+0
+run_print_file
+
+write_sphere_data
+1
+length_scale_factor
+1.0d0
+real_ref_index_scale_factor
+1.0d0
+imag_ref_index_scale_factor
+1.0d0
+real_chiral_factor
+0.0d0
+imag_chiral_factor
+0.0d0
+medium_real_ref_index
+1.0d0
+medium_imag_ref_index
+0.d0
+medium_real_chiral_factor
+0.d0
+medium_imag_chiral_factor
+0.d0
+target_euler_angles_deg
+0.0d0,0.0d0,0.0d0
+mie_epsilon
+1.0d-6
+translation_epsilon
+1.0d-6
+solution_epsilon
+1.0d-8
+max_number_iterations
+5000
+store_translation_matrix
+0
+sm_number_processors
+10
+near_field_distance
+1.0d8
+iterations_per_correction
+20
+min_scattering_angle_deg
+0.0d0
+max_scattering_angle_deg
+180.d0
+min_scattering_plane_angle_deg
+0.0d0
+max_scattering_plane_angle_deg
+0.0d0
+delta_scattering_angle_deg
+1
+incident_or_target_frame
+0
+normalize_scattering_matrix
+1
+gaussian_beam_constant
+0.0d0
+gaussian_beam_focal_point
+0.0d0,0.0d0,0.0d0
+fixed_or_random_orientation
+1
+incident_azimuth_angle_deg
+0.d0
+incident_polar_angle_deg
+0.0d0
+calculate_scattering_coefficients
+1
+scattering_coefficient_file
+
+track_iterations
+1
+calculate_near_field
+0
+near_field_plane_coord
+1
+near_field_plane_position
+0.0d0
+near_field_plane_vertices
+10.0d0,10.0d0
+spacial_step_size
+0.5d0
+polarization_angle_deg
+0.d0
+near_field_output_file
+nf_default_out.dat
+near_field_output_data
+2
+plane_wave_epsilon
+1.0d-4
+calculate_t_matrix
+1
+t_matrix_file
+tm_default.dat
+t_matrix_convergence_epsilon
+1.d-7
+sphere_sizes_and_positions
+1.0d0  0.0d0  0.0d0      0.0d0 2.2d0  0.0d0
+1.0d0  2.0d0  0.0d0      0.0d0 2.2d0  0.0d0
+1.0d0 -2.0d0  0.0d0      0.0d0 2.2d0  0.0d0
+1.0d0  1.0d0  1.73206d0  0.0d0 2.2d0  0.0d0
+1.0d0 -1.0d0  1.73206d0  0.0d0 2.2d0  0.0d0
+1.0d0  1.0d0 -1.73206d0  0.0d0 2.2d0  0.0d0
+1.0d0 -1.0d0 -1.73206d0  0.0d0 2.2d0  0.0d0
+new_run
+fixed_or_random_orientation
+0
+multiple_run
+target_euler_angles_deg
+0.0d0 0.0d0 0.0d0 10.0d0 0.0d0 0.0d0 1.0d0 0.0d0 0.0d0
+end_of_options
+
+
+
+
+
+
+
+            
+
+
+new_run
+begin_comment
+a test of the new run feature
+end_comment
+incident_or_target_frame
+0
+end_of_options
+target_euler_angles_deg
+90.d0 0.d0 -90.d0 90.d0 180.d0 -90.d0 0.d0 2.5d0 0.d0
+end_of_options
+sphere_sizes_and_positions
+12.710  0.000  0.000  0.000 1.310 0.000   0.00  0.0
+12.710  0.0    0.     0.   tm-ran1000-rev.dat
+end_of_options
+multiple_run
+real_chiral_factor
+0.d0 2.d0 .05d0
+end_of_options
+sphere_sizes_and_positions
+1.  0.  0.  0.  2.2 0. 0. 0.
+1.  2.  0.  0.  2.2  0. .05 0.
+1. -2.  0.  0.  2.2  0. -.05 0.
+1.  1.  1.73206  0.  2.2  0. -.05 0.
+1. -1.  1.73206  0.  2.2  0. .05 0.
+1.  1. -1.73206  0.  2.2  0. -.05 0.
+1. -1. -1.73206  0.  2.2  0.  .05 0.
+.1  0.  0.  0.9  1.6 0.6  0. 0.
+.1  2.  0.  0.9  1.6 0.6  0. 0.
+.1 -2.  0.  0.9  1.6 0.6  0. 0.
+.1  1.  1.73206  0.9  1.6 0.6  0. 0.
+.1 -1.  1.73206  0.9  1.6 0.6  0. 0.
+.1  1. -1.73206  0.9  1.6 0.6  0. 0.
+.1 -1. -1.73206  0.9  1.6 0.6  0. 0.
+
+
+cylposr10z8_ranhole.pos
+
+number_spheres
+7
+fixed_or_random_orientation
+0
+incident_polar_angle_deg
+0.
+sphere_sizes_and_positions
+1.  0.  0.  0.  tm1.dat
+1.  2.  0.  0.  tm1.dat
+1. -2.  0.  0.  tm1.dat
+1.  1.  1.73206  0.  tm1.dat
+1. -1.  1.73206  0.  tm1.dat
+1.  1. -1.73206  0.  tm1.dat
+1. -1. -1.73206  0.  tm1.dat
+multiple_run
+incident_polar_angle_deg
+0. 5. 1.
+end_of_options
+
+1. 0. 0. 0. 1.6 0.
+.1 0. 0. 0.9 2. .5
+
+1.  0.  0.  0.  1.6 0.
+1.  2.  0.  0.  1.6 0.
+1. -2.  0.  0.  1.6 0.
+1.  1.  1.73206  0.  1.6 0.
+1. -1.  1.73206  0.  1.6 0.
+1.  1. -1.73206  0.  1.6 0.
+1. -1. -1.73206  0.  1.6 0.
+1.  0.  0.  0.  tm1.dat
+1.  2.  0.  0.  tm1.dat
+1. -2.  0.  0.  tm1.dat
+1.  1.  1.73206  0.  tm1.dat
+1. -1.  1.73206  0.  tm1.dat
+1.  1. -1.73206  0.  tm1.dat
+1. -1. -1.73206  0.  tm1.dat
+
+
+new_run
+incident_polar_angle_deg
+5.d0
+new_run
+incident_polar_angle_deg
+10.d0
+new_run
+incident_polar_angle_deg
+15.d0
+new_run
+incident_polar_angle_deg
+20.d0
+new_run
+incident_polar_angle_deg
+25.d0
+end_of_options
+1.  0.  0.  2.  tm1.dat
+1.  4.  0.  0.  tm1.dat
+1. -2.  0.  0.  tm1.dat
+1. -4.  0.  0.  tm1.dat
+1.  3.  1.73206  0.  tm1.dat
+1. -3.  1.73206  0.  tm1.dat
+1.  1. -1.73206  0.  tm1.dat
+1. -1. -1.73206  0.  tm1.dat
+1.  3. -1.73206  0.  tm1.dat
+1. -3. -1.73206  0.  tm1.dat
+
+end_of_options
+new_run
+incident_azimuth_angle_deg
+30.d0
+scattering_plane_angle_deg
+60.d0
+new_run
+incident_azimuth_angle_deg
+60.d0
+scattering_plane_angle_deg
+30.d0
+new_run
+incident_azimuth_angle_deg
+90.d0
+scattering_plane_angle_deg
+0.d0
+end_of_options
+
+
+number_spheres
+19
+sphere_position_file
+
+output_file
+test5.dat
+append_output_file
+0
+run_print_file
+run2.dat
+length_scale_factor
+20.
+real_ref_index_scale_factor
+1.
+imag_ref_index_scale_factor
+1.d0
+real_chiral_factor
+0.
+imag_chiral_factor
+0.
+medium_real_ref_index
+1.
+medium_imag_ref_index
+0.00
+mie_epsilon
+1.d-8
+translation_epsilon
+1.d-6
+solution_epsilon
+1.d-8
+max_number_iterations
+5000
+max_memory_per_processor
+1500
+store_translation_matrix
+0
+near_field_distance
+200.
+iterations_per_correction
+20
+min_scattering_angle_deg
+0.d0
+max_scattering_angle_deg
+180.d0
+number_scattering_angles
+0
+normalize_scattering_matrix
+1
+gaussian_beam_constant
+0.00d0
+gaussian_beam_focal_point
+0.d0,0.d0,0.d0
+fixed_or_random_orientation
+0
+incident_azimuth_angle_deg
+0.d0
+incident_polar_angle_deg
+0.0d0
+scattering_plane_angle_deg
+0.d0
+calculate_scattering_coefficients
+1
+scattering_coefficient_file
+amn_temp.dat
+track_iterations
+1
+calculate_near_field
+0
+near_field_plane_coord
+1
+near_field_plane_position
+0.d0
+near_field_plane_vertices
+-50.d0,-50.d0,50.d0,50.d0
+spacial_step_size
+.5d0
+polarization_angle_deg
+0.d0
+near_field_output_file
+nftemp1c.dat
+near_field_output_data
+2
+plane_wave_epsilon
+0.01d0
+calculate_t_matrix
+1
+t_matrix_file
+tm1.dat
+infinite_medium
+0
+excited_sphere
+0
+t_matrix_convergence_epsilon
+1.d-6
+sphere_sizes_and_positions
+1.  0.  0.  0.  1.6  0.
+.1  0.  0.  0.9  2.0  0.6
+end_of_options
+
+
+1.  0.  0.  0.  1.6  0.
+1.  2.  0.  0.  1.6  0.
+1.  4.  0.  0.  1.6  0.
+1. -2.  0.  0.  1.6  0.
+1. -4.  0.  0.  1.6  0.
+1.  1.  1.73206  0.  1.6  0.
+1. -1.  1.73206  0.  1.6  0.
+1.  3.  1.73206  0.  1.6  0.
+1. -3.  1.73206  0.  1.6  0.
+1.  1. -1.73206  0.  1.6  0.
+1. -1. -1.73206  0.  1.6  0.
+1.  3. -1.73206  0.  1.6  0.
+1. -3. -1.73206  0.  1.6  0.
+1.  0.  3.46415  0.  1.6  0.
+1.  2.  3.46415  0.  1.6  0.
+1. -2.  3.46415  0.  1.6  0.
+1.  0. -3.46415  0.  1.6  0.
+1.  2. -3.46415  0.  1.6  0.
+1. -2. -3.46415  0.  1.6  0.
+end_of_options
+.1  0.  0.  0.9  2.0  0.6
+.1  2.  0.  0.9  2.0  0.6
+.1  4.  0.  0.9  2.0  0.6
+.1 -2.  0.  0.9  2.0  0.6
+.1 -4.  0.  0.9  2.0  0.6
+.1  1.  1.73206  0.9  2.0  0.6
+.1 -1.  1.73206  0.9  2.0  0.6
+.1  3.  1.73206  0.9  2.0  0.6
+.1 -3.  1.73206  0.9  2.0  0.6
+.1  1. -1.73206  0.9  2.0  0.6
+.1 -1. -1.73206  0.9  2.0  0.6
+.1  3. -1.73206  0.9  2.0  0.6
+.1 -3. -1.73206  0.9  2.0  0.6
+.1  0.  3.46415  0.9  2.0  0.6
+.1  2.  3.46415  0.9  2.0  0.6
+.1 -2.  3.46415  0.9  2.0  0.6
+.1  0. -3.46415  0.9  2.0  0.6
+.1  2. -3.46415  0.9  2.0  0.6
+.1 -2. -3.46415  0.9  2.0  0.6
+end_of_options
+
+multiple_run
+target_euler_angles_deg
+0.d0, 0.d0, 90.d0, 0.d0, 180.d0, 90.d0, 0.d0, 2.5d0, 0.d0
+end_of_options
+end_of_options
+
+
+ 10.0000    0.0000    0.0000    0.0000  1.200000  0.000000    0.01  0.0
+  9.0000    0.0000    0.0000    1.0000  1.400000  0.000000    0.02  0.0
+  8.0000    0.0000    0.0000    2.0000  1.600000  0.000000    0.03  0.0
+  7.0000    0.0000    0.0000    3.0000  1.800000  0.000000    0.04  0.0
+  6.0000    0.0000    0.0000    4.0000  2.000000  0.000000    0.05  0.0
+  5.0000    0.0000    0.0000    5.0000  2.200000  0.000000    0.06  0.0
+  4.0000    0.0000    0.0000    6.0000  2.400000  0.000000    0.07  0.0
+  3.0000    0.0000    0.0000    7.0000  2.600000  0.000000    0.08  0.0
+  2.0000    0.0000    0.0000    8.0000  2.800000  0.000000    0.09  0.0
+  1.0000    0.0000    0.0000    9.0000  3.000000  0.000000    0.10  0.0
+
+
+
+
+10.000  0.000  0.000  0.000 1.200 0.000   0.01  0.0
+ 5.000  0.000  0.000  5.000 1.400 0.000   0.00  0.0
+ 5.000  0.000  0.000 -5.000 1.400 0.000   0.00  0.0
+ 2.500  0.000  0.000  7.500 1.600 0.000  -0.01  0.0
+ 2.500  0.000  0.000  2.500 1.600 0.000  -0.01  0.0
+ 2.500  0.000  0.000 -7.500 1.600 0.000  -0.01  0.0
+ 2.500  0.000  0.000 -2.500 1.600 0.000  -0.01  0.0
+ 3.000 -7.000  0.000  0.000 1.800 0.100   0.02  0.0
+ 3.000  7.000  0.000  0.000 1.800 0.100   0.02  0.0
+
+
+
+
+ 10.0000    0.0000    -10.0000    0.0000  1.200000  0.000000
+  9.0000    0.0000    -10.0000    1.0000  1.400000  0.000000
+  8.0000    0.0000    -10.0000    2.0000  1.600000  0.000000
+  7.0000    0.0000    -10.0000    3.0000  1.800000  0.000000
+  6.0000    0.0000    -10.0000    4.0000  2.000000  0.000000
+
+
+
+20 0 0 0 .2 3.1 0 0
+19.5 0 0 0 1.7 .0 .01 0
+5 0 0  0 1.4 .3 0 0
+4.9 0 0 0 1.7 0. -.01 0
+
+5  0  0  11   1.6 0.5 -.01 0
+6 0  0  0  1.6  0. .01 0
+4 10 0 0 2.2 .1 .02 .001
+10  0  0  0  1.8  0. -.01  0
+2  0  0  8  1.6  0.4   0.02   0
+2  0  0 -8  1.6  0.4  -0.02  0
+
+10.  0. 0. 0. 1.6 0. 0. 0.
+5. 0. 0. 1. 2.3  0.2 0. 0.
+
+10. 0. 0. 0. 1.6 0.  0.0 0.
+2.  0. 0. 0. 2.0 0.2 0.0 0.
+
+
+
+
+10. 0. 0. 0. 1.6 0. 0. 0.
+2.  0. 0. 2. 2.0 0. 0. 0.
+2.  0. 0. -2. 2.0 0. 0. 0.
+2.  0. 0. 2. 2.0 0. 0. 0.
+2.  0. 0. -2. 2.0 0. 0. 0.
+
+1. 0. 0. 1. 1.6001  0.001
+1. 0. 0. 2.
+1. 2. 0. 0.
+1. 0. 2. 0.
+1.   -2.   -2.   -2.   2.  .1
+1.   -2.   -2.   0     2.  .1
+1.   -2.   -2.   2.    2.  .1
+1.   -2.   0     -2.   2.  .1
+1.   -2.   0     0     2.  .1
+1.   -2.   0     2.    2.  .1
+1.   -2.   2.    -2.   2.  .1
+1.   -2.   2.    0     2.  .1
+1.   -2.   2.    2.    2.  .1
+1.   0     -2.   -2.   2.  .1
+1.   0     -2.   0     2.  .1
+1.   0     -2.   2.    2.  .1
+1.   0     0     -2.   2.  .1
+1.   0     0     0     2.  .1
+1.   0     0     2.    2.  .1
+1.   0     2.    -2.   2.  .1
+1.   0     2.    0     2.  .1
+1.   0     2.    2.    2.  .1
+1.   2.    -2.   -2.   2.  .1
+1.   2.    -2.   0     2.  .1
+1.   2.    -2.   2.    2.  .1
+1.   2.    0     -2.   2.  .1
+1.   2.    0     0     2.  .1
+1.   2.    0     2.    2.  .1
+1.   2.    2.    -2.   2.  .1
+1.   2.    2.    0     2.  .1
+1.   2.    2.    2.    2.  .1
+10.  0.    0.    0.    1.  0.
+
+
+ 10.0000    0.0000    0.0000    0.0000  1.200000  0.000000
+  9.0000    0.0000    0.0000    1.0000  1.400000  0.000000
+  8.0000    0.0000    0.0000    1.0000  1.600000  0.000000
+  7.0000    0.0000    0.0000    1.0000  1.800000  0.000000
+  6.0000    0.0000    0.0000    1.0000  2.000000  0.000000
+  5.0000    0.0000    0.0000    1.0000  2.200000  0.000000
+  4.0000    0.0000    0.0000    1.0000  2.400000  0.000000
+  3.0000    0.0000    0.0000    1.0000  2.600000  0.000000
+  2.0000    0.0000    0.0000    1.0000  2.800000  0.000000
+  1.0000    0.0000    0.0000    1.0000  3.000000  0.000000
+
+
+
+1.  0.  0.  1.  1.6 .5
+5. 0.   0.  0.  2.  0.
+
+
+
+
+1. 0. 2.  0. 1.8 0.
+1. 0. 0. 2. 1.4 1.
+5. 0.00 0.  0. 1.5 .0
+10. 0. 0. 0. 2. 0.
+2. 0. 0. -12.
+8. 18. 0. 0.
+end_of_options
