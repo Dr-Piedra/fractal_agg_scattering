@@ -1,5 +1,8 @@
 # fractal_agg_scattering
-Generates a fractal aggregate and computes its light scattering mueller matrix
+IF you find this code useful, please cite:
+- Piedra, Patricio, Aimable Kalume, Evgenij Zubko, Daniel Mackowski, Yong-Le Pan, and Gorden Videen. "Particle-shape classification using light scattering: An exercise in deep learning." Journal of Quantitative Spectroscopy and Radiative Transfer 231 (2019): 140-156.
+
+This code generates a fractal aggregate of size parameter x, rotates the fractal aggregate at random, and computes its light scattering mueller matrix.
 
 returns: 
 - The mueller matrix
