@@ -1,6 +1,6 @@
 # fractal_agg_scattering
 
-This code generates a fractal aggregate of size parameter x, rotates the fractal aggregate at random, and computes its light scattering mueller matrix.
+This Python code generates a fractal aggregate of size parameter x, rotates the fractal aggregate at random by Euler angle alpha, beta and gamma, and computes its light scattering mueller matrix.
 
 returns: 
 - The mueller matrix
@@ -17,7 +17,7 @@ To compile with gfortran:
 
 gfortran -o mstm.exe mpidefs-serial.f90 mstm-intrinsics-v3.0.f90 mstm-modules-v3.0.f90 mstm-main-v3.0.f90
 
-The code also uses fracagpos.f90 to generate random coordinates of monomers. This fracagpos.f90 file needs to be compiled as well and change its name to "coord_generator.out"
+The code also uses fracagpos.f90 to generate random coordinates of monomers. This fracagpos.f90 file needs to be compiled as well and changed its name to "coord_generator.out"
 
 These commands worked for me:
 
@@ -34,7 +34,7 @@ To use the python function:
 - mueller_matrix,coordinates = gen_frac(size_parameter,alpha,beta,gamma) 
 
 
-IF you find this code useful, please cite:
+If you find this code useful, please cite:
 - Piedra, Patricio, Aimable Kalume, Evgenij Zubko, Daniel Mackowski, Yong-Le Pan, and Gorden Videen. "Particle-shape classification using light scattering: An exercise in deep learning." Journal of Quantitative Spectroscopy and Radiative Transfer 231 (2019): 140-156.
 
 
