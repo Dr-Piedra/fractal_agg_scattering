@@ -10,10 +10,10 @@ returns:
 
 
 This code uses MSTM 
-http://www.eng.auburn.edu/~dmckwski/scatcodes/
-Mackowski, D. "MSTM Version 3.0: April 2013." (2013).
+- http://www.eng.auburn.edu/~dmckwski/scatcodes/
+- Mackowski, D. "MSTM Version 3.0: April 2013." (2013).
 
-MSTM code has been set in the Repo, but it needs to be re-compiled 
+MSTM code has been provided the Repo, but it needs to be re-compiled 
 
 To compile with gfortran:
 
