@@ -1,4 +1,4 @@
-# fractal_agg_scattering
+# fractal_aggregate_scattering
 
 This Python code generates a fractal aggregate of size parameter x, rotates the fractal aggregate at random by Euler angle alpha, beta and gamma, and computes its light scattering mueller matrix.
 
