@@ -1,6 +1,6 @@
 # fractal_aggregate_scattering
 
-This Python function "gen_frac" generates a fractal aggregate of size parameter x, rotates the fractal aggregate at random by Euler angle alpha, beta and gamma, and computes its light scattering mueller matrix.
+This Python function "gen_frac" generates a fractal aggregate of size parameter x, rotates the fractal aggregate at random by Euler angle alpha, beta and gamma in the Z-Y-Z convention and computes its light scattering mueller matrix.
 
 Inputs:
 - The size parameter
