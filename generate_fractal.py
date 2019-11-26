@@ -69,7 +69,7 @@ def gen_frac(x,n_spheres,alpha,beta,gamma):
     rotated.to_csv('coords.dat',index=False,sep='\t',header=False)
     rotated[['x','y','z']].to_csv('%s/geom.csv'%save_directory,index=False) #save to read
 
-    ##execute scattering
+    ##read sample input file to execute mstm
     f=open('scat_angles_input.inp','r')
     contents=f.read()
     contents= contents.split('\n')
@@ -80,7 +80,7 @@ def gen_frac(x,n_spheres,alpha,beta,gamma):
     out_file=save_directory+'/mueller_log'
     contents[9]=out_file
     
-    #write a new input file
+    #write a new input file for mstm and execute
     g=open('input.inp','w')
     for line in contents:
         g.writelines(line+'\n')
