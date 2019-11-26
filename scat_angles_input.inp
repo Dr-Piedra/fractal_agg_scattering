@@ -23,6 +23,6 @@ min_scattering_plane_angle_deg
 max_scattering_plane_angle_deg
 360
 number_scattering_angles
-32851
+64800
 scattering_angle_file
 scat_angles.csv
